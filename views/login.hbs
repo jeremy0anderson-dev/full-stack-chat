@@ -1,0 +1,37 @@
+<div class="container" id="container">
+    <div class="form-container sign-up-container">
+        <form method="post" target="_self" action="/auth/register" id="register-form">
+            <h1 class="fs-sm">Create Account:</h1>
+            <!--            <div class="social-container">-->
+            <!--                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>-->
+            <!--                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>-->
+            <!--                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>-->
+            <!--            </div>-->
+<!--            <label><input class="signup-field" name="first_name" id="first_name" type="text" placeholder="First Name" />-->
+<!--            <label><input class="signup-field" name="last_name" id="last_name" type="text" placeholder="Last Name" />-->
+            <label><input class="signup-field" name="username" id="rUser-name" type="text" placeholder="Username" autocomplete="off"/></label>
+            <label><input class="signup-field" name="email" id="rEmail" type="email" placeholder="Email" autocomplete="off"/></label>
+            <label><input class="signup-field" name="password" id="rPassword" type="password" autocomplete="off" placeholder="Password"/></label>
+            <button id="signup" class="button signIn-action" type="submit">Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form method="post" target="_self" action="/auth/login" id="login-form">
+            <h1 class="fs-sm">Sign in:</h1>
+            <label><input class="signup-field" name ="username" id="lUser-name" type="text" title="username" autocomplete="off" placeholder="Username"/></label>
+            <label><input class="signup-field" name="password" id="lPassword" type="password" placeholder="Password" autocomplete="off" /></label>
+            <a href="#">Forgot your password?</a>
+            <button class="button signIn-action" type="submit">Sign In</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <button class="button ghost signIn-action" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <button class="button ghost signIn-action" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
